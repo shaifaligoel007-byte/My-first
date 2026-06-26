@@ -4,10 +4,10 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 const { v4: uuidv4 } = require('uuid');
 
-const authRouter = require('./routes/auth');
-const leaderboardRouter = require('./routes/leaderboard');
-const roomManager = require('./game/roomManager');
-const gameSync = require('./game/gameSync');
+const authRouter = require('./auth');
+const leaderboardRouter = require('./leaderboard');
+const roomManager = require('./roomManager');
+const gameSync = require('./gameSync');
 const db = require('./db');
 
 const app = express();
